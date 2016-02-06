@@ -16,6 +16,7 @@ import org.usfirst.frc4089.Investigation2016Robot.commands.*;
 import edu.wpi.first.wpilibj.CANTalon;
 import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.DoubleSolenoid;
+import edu.wpi.first.wpilibj.Encoder;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.Ultrasonic;
@@ -93,10 +94,10 @@ public class DriveTrain extends Subsystem {
     	rDrive.tankDrive(-speed, speed);
     }
     
-    public void driveRightDiff(double leftSpeed, double rightSpeed){
+    public void driveRSightDiff(double leftSpeed, double rightSpeed){
     	rDrive.tankDrive(-leftSpeed, rightSpeed);
     }
-    
+    //
     public void driveLeft(double speed){
     	rDrive.tankDrive(speed, -speed);
     }
@@ -108,9 +109,41 @@ public class DriveTrain extends Subsystem {
     public void driveStop(){
     	rDrive.tankDrive(0,0);
     }
-    
+    //
     public boolean getDriveState(){
     	return false;
+    }
+ // calls the values of the encoders
+    public double getLefRighttEncoderDist(){
+    	return quadEncoderRight.getDistance();
+    }
+    public double getLeftEncoderDist(){
+    	return quadEncoderLeft.getDistance();
+    }
+    public double getRightEncoderRate(){
+    	return quadEncoderRight.getRate();
+    }
+    public double getLeftEncoderRate(){
+    	return quadEncoderLeft.getRate();
+    }
+    
+    public void leftShiftHigh(){
+    	leftDriveShifter.set(DoubleSolenoid.Value.kForward);
+    }
+    public void leftShiftLow(){
+    	leftDriveShifter.set(DoubleSolenoid.Value.kReverse);
+    }
+    public void leftShiftStop(){
+    	leftDriveShifter.set(DoubleSolenoid.Value.kOff);
+    }
+    public void rightShiftHigh(){
+    	rightDriveShifter.set(DoubleSolenoid.Value.kForward);
+    }
+    public void rightShiftLow(){
+    	rightDriveShifter.set(DoubleSolenoid.Value.kReverse);
+    }
+    public void rightSiftStop(){
+    	rightDriveShifter.set(DoubleSolenoid.Value.kOff);
     }
 }
 

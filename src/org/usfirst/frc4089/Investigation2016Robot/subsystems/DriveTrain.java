@@ -126,5 +126,24 @@ public class DriveTrain extends Subsystem {
     public double getLeftEncoderRate(){
     	return quadEncoderLeft.getRate();
     }
+    
+    public void leftShiftHigh(){
+    	leftDriveShifter.set(DoubleSolenoid.Value.kForward);
+    }
+    public void leftShiftLow(){
+    	leftDriveShifter.set(DoubleSolenoid.Value.kReverse);
+    }
+    public void leftShiftStop(){
+    	leftDriveShifter.set(DoubleSolenoid.Value.kOff);
+    }
+    public void rightShiftHigh(){
+    	rightDriveShifter.set(DoubleSolenoid.Value.kForward);
+    }
+    public void rightShiftLow(){
+    	rightDriveShifter.set(DoubleSolenoid.Value.kReverse);
+    }
+    public void rightSiftStop(){
+    	rightDriveShifter.set(DoubleSolenoid.Value.kOff);
+    }
 }
 
