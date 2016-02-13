@@ -100,6 +100,8 @@ public class RobotMap {
         driveTrainRDrive.setSensitivity(0.5);
         driveTrainRDrive.setMaxOutput(1.0);
 
+        driveTrainRDrive.setInvertedMotor(RobotDrive.MotorType.kFrontRight, true);
+        driveTrainRDrive.setInvertedMotor(RobotDrive.MotorType.kRearRight, true);
         driveTrainQuadEncoderLeft = new Encoder(0, 1, false, EncodingType.k4X);
         LiveWindow.addSensor("DriveTrain", "QuadEncoderLeft", driveTrainQuadEncoderLeft);
         driveTrainQuadEncoderLeft.setDistancePerPulse(1.0);

@@ -16,6 +16,8 @@ public class Constants {
 	public static final double autoDriveTurnLeft30Time = 0.30;
 	public static final double leftDriveSpeed = -0.8;
 	public static final double rightDriveSpeed = -0.8;
+	public static final double spinShootLTSpeed = 0.6;
+	public static final double spinShootRTSpeed = 0.6;
 	public static final double resPan = 0.01;
 	public static final double resTilt = 0.01;
 	public static final double airTimeoutExtend = 0.5;

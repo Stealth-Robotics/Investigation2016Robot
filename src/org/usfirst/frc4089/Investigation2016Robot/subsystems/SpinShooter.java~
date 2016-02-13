@@ -50,5 +50,15 @@ public class SpinShooter extends Subsystem {
         // Set the default command for a subsystem here.
         // setDefaultCommand(new MySpecialCommand());
     }
+    public void dynSpinShoot(double leftSpeed , double rightSpeed ){
+    	leftSpin.set(leftSpeed);
+    	rightSpin.set(-rightSpeed);
+    }
+    
+    public void stopShoot(){
+    	leftSpin.set(0);
+    	rightSpin.set(0);
+    	
+    }
 }
 
