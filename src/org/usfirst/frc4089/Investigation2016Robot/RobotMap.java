@@ -57,7 +57,11 @@ public class RobotMap {
     public static DigitalInput barClimbLSBot;
     public static CANTalon barClimbWinchMotor;
     public static DoubleSolenoid barClimbDSRaiseLower;
-    public static CANTalon collectorMCollector;
+    public static CANTalon collectorMCollectorActuation;
+    public static DigitalInput collectorLSCollectorOut;
+    public static DigitalInput collectorLSCollectorStage;
+    public static DigitalInput collectorLSCollectorIn;
+    public static CANTalon collectorMCollectorWheel;
     public static AnalogGyro sensorsAnalogGyro1;
     public static DigitalInput sensorsDigitalAccel;
     public static AnalogInput sensorsmaxSonar;
@@ -102,11 +106,11 @@ public class RobotMap {
 
         driveTrainRDrive.setInvertedMotor(RobotDrive.MotorType.kFrontRight, true);
         driveTrainRDrive.setInvertedMotor(RobotDrive.MotorType.kRearRight, true);
-        driveTrainQuadEncoderLeft = new Encoder(0, 1, false, EncodingType.k4X);
+        driveTrainQuadEncoderLeft = new Encoder(10, 11, false, EncodingType.k4X);
         LiveWindow.addSensor("DriveTrain", "QuadEncoderLeft", driveTrainQuadEncoderLeft);
         driveTrainQuadEncoderLeft.setDistancePerPulse(1.0);
         driveTrainQuadEncoderLeft.setPIDSourceType(PIDSourceType.kRate);
-        driveTrainQuadEncoderRight = new Encoder(7, 8, false, EncodingType.k4X);
+        driveTrainQuadEncoderRight = new Encoder(12, 13, false, EncodingType.k4X);
         LiveWindow.addSensor("DriveTrain", "QuadEncoderRight", driveTrainQuadEncoderRight);
         driveTrainQuadEncoderRight.setDistancePerPulse(1.0);
         driveTrainQuadEncoderRight.setPIDSourceType(PIDSourceType.kRate);
@@ -150,8 +154,20 @@ public class RobotMap {
         barClimbDSRaiseLower = new DoubleSolenoid(1, 2, 3);
         LiveWindow.addActuator("BarClimb", "DSRaiseLower", barClimbDSRaiseLower);
         
-        collectorMCollector = new CANTalon(9);
-        LiveWindow.addActuator("Collector", "MCollector", collectorMCollector);
+        collectorMCollectorActuation = new CANTalon(10);
+        LiveWindow.addActuator("Collector", "MCollectorActuation", collectorMCollectorActuation);
+        
+        collectorLSCollectorOut = new DigitalInput(0);
+        LiveWindow.addSensor("Collector", "LSCollectorOut", collectorLSCollectorOut);
+        
+        collectorLSCollectorStage = new DigitalInput(8);
+        LiveWindow.addSensor("Collector", "LSCollectorStage", collectorLSCollectorStage);
+        
+        collectorLSCollectorIn = new DigitalInput(1);
+        LiveWindow.addSensor("Collector", "LSCollectorIn", collectorLSCollectorIn);
+        
+        collectorMCollectorWheel = new CANTalon(11);
+        LiveWindow.addActuator("Collector", "MCollectorWheel", collectorMCollectorWheel);
         
         sensorsAnalogGyro1 = new AnalogGyro(0);
         LiveWindow.addSensor("Sensors", "AnalogGyro1", sensorsAnalogGyro1);
