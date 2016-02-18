@@ -46,7 +46,7 @@ public class CollectorRetract extends Command {
     protected void execute() {
     	//runs the motor to attract the collector until the in limit switch is triggered
     	
-    	Robot.collector.retractCollector(Constants.collectorSpeed);
+    	Robot.collector.retractCollector(Constants.collectorActuationSpeed);
     }
 
     // Make this return true when this Command no longer needs to run execute()
