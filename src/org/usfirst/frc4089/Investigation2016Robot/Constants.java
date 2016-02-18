@@ -20,6 +20,8 @@ public class Constants {
 	public static final double spinShootRTSpeed = 0.6;
 	public static final double collectorActuationSpeed = 0.4;
 	public static final double collectorWheelSpeed = 0.8;
+	public static final double pusherMotorSpeed = 0.9;
+	
 	public static final double resPan = 0.01;
 	public static final double resTilt = 0.01;
 	public static final double airTimeoutExtend = 0.5;

@@ -1,0 +1,363 @@
+<xml version="1.0">
+<dashboard>
+	<widget field="DriveToLine" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="431" y="216"/>
+	</widget>
+	<widget field="CollectorRetract" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="431" y="180"/>
+	</widget>
+	<widget field="ShooterLowerWheels" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="431" y="144"/>
+	</widget>
+	<widget field="RotateDrive: 45posdeg" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="431" y="108"/>
+	</widget>
+	<widget field="shiftLow" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="431" y="72"/>
+	</widget>
+	<widget field="Auto1" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="215" y="540"/>
+	</widget>
+	<widget field="Shift" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="215" y="504"/>
+	</widget>
+	<widget field="CollectorRunWheelsOut" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="431" y="36"/>
+	</widget>
+	<widget field="RunCompressor: off" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="215" y="468"/>
+	</widget>
+	<widget field="Auto3" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="215" y="432"/>
+	</widget>
+	<widget field="CollectorStage" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="215" y="396"/>
+	</widget>
+	<widget field="CollectorExtend" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="215" y="360"/>
+	</widget>
+	<widget field="DrivePastLine: driveZero" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="431" y="0"/>
+	</widget>
+	<widget field="ShooterSpinWheels" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="215" y="324"/>
+	</widget>
+	<widget field="Auto5" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="215" y="288"/>
+	</widget>
+	<widget field="AutoShoot" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="215" y="252"/>
+	</widget>
+	<widget field="RunCompressor: on" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="215" y="216"/>
+	</widget>
+	<widget field="CollectorActuate" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="215" y="180"/>
+	</widget>
+	<widget field="RotateDrive: 5negdeg" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="215" y="144"/>
+	</widget>
+	<widget field="shiftHigh" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="216" y="108"/>
+	</widget>
+	<widget field="CollectorRunWheelsIn" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="216" y="72"/>
+	</widget>
+	<widget field="Throw" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="215" y="36"/>
+	</widget>
+	<widget field="RotateDrive: 15negdeg" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="215" y="0"/>
+	</widget>
+	<widget field="RotateDrive: 5posdeg" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="0" y="540"/>
+	</widget>
+	<widget field="RotateDrive: 15posdeg" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="0" y="504"/>
+	</widget>
+	<widget field="pusherRotateUp" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="0" y="468"/>
+	</widget>
+	<widget field="ClimbUp" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="0" y="432"/>
+	</widget>
+	<widget field="Auto2" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="0" y="396"/>
+	</widget>
+	<widget field="LiftRotateUp" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="0" y="360"/>
+	</widget>
+	<widget field="ClimbDown" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="0" y="324"/>
+	</widget>
+	<widget field="Retract" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="0" y="288"/>
+	</widget>
+	<widget field="Auto4" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="0" y="252"/>
+	</widget>
+	<widget field="pusherRotateDown" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="0" y="216"/>
+	</widget>
+	<widget field="UserDrive" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="0" y="180"/>
+	</widget>
+	<widget field="LiftRotateDown" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="0" y="144"/>
+	</widget>
+	<widget field="RotateDrive: 30negdeg" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="0" y="108"/>
+	</widget>
+	<widget field="RotateDrive: 45negdeg" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="0" y="72"/>
+	</widget>
+	<widget field="ShootRaiseWheels" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="0" y="36"/>
+	</widget>
+	<widget field="RotateDrive: 30posdeg" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="0" y="0"/>
+	</widget>
+</dashboard>
+<live-window>
+	<widget field="Collector" type="LW Subsystem" class="edu.wpi.first.smartdashboard.livewindow.elements.LWSubsystem">
+		<widget field="MCollectorWheel" type="CANSpeedController" class="edu.wpi.first.smartdashboard.livewindow.elements.CANSpeedController">
+			<location x="6" y="18"/>
+			<height>157</height>
+			<width>309</width>
+		</widget>
+		<widget field="MCollectorActuation" type="CANSpeedController" class="edu.wpi.first.smartdashboard.livewindow.elements.CANSpeedController">
+			<location x="6" y="175"/>
+			<height>157</height>
+			<width>309</width>
+		</widget>
+		<widget field="LSCollectorIn" type="Digital Input" class="edu.wpi.first.smartdashboard.livewindow.elements.DigitalInputDisplay">
+			<location x="6" y="332"/>
+			<height>22</height>
+			<width>309</width>
+		</widget>
+		<widget field="LSCollectorStage" type="Digital Input" class="edu.wpi.first.smartdashboard.livewindow.elements.DigitalInputDisplay">
+			<location x="6" y="354"/>
+			<height>22</height>
+			<width>309</width>
+		</widget>
+		<widget field="LSCollectorOut" type="Digital Input" class="edu.wpi.first.smartdashboard.livewindow.elements.DigitalInputDisplay">
+			<location x="6" y="376"/>
+			<height>22</height>
+			<width>309</width>
+		</widget>
+		<location x="1141" y="2"/>
+		<width>321</width>
+		<height>405</height>
+	</widget>
+	<widget field="Pusher" type="LW Subsystem" class="edu.wpi.first.smartdashboard.livewindow.elements.LWSubsystem">
+		<widget field="PotLift" type="Analog Input" class="edu.wpi.first.smartdashboard.livewindow.elements.SingleNumberDisplay">
+			<location x="6" y="18"/>
+			<height>22</height>
+			<width>309</width>
+		</widget>
+		<widget field="MLiftAngle" type="CANSpeedController" class="edu.wpi.first.smartdashboard.livewindow.elements.CANSpeedController">
+			<location x="6" y="40"/>
+			<height>157</height>
+			<width>309</width>
+		</widget>
+		<location x="806" y="17"/>
+		<width>321</width>
+		<height>204</height>
+	</widget>
+	<widget field="BarClimb" type="LW Subsystem" class="edu.wpi.first.smartdashboard.livewindow.elements.LWSubsystem">
+		<widget field="WinchMotor" type="CANSpeedController" class="edu.wpi.first.smartdashboard.livewindow.elements.CANSpeedController">
+			<location x="6" y="18"/>
+			<height>157</height>
+			<width>309</width>
+		</widget>
+		<widget field="DSRaiseLower" type="Double Solenoid" class="edu.wpi.first.smartdashboard.livewindow.elements.RelayController">
+			<location x="6" y="175"/>
+			<height>22</height>
+			<width>309</width>
+		</widget>
+		<widget field="LSTop" type="Digital Input" class="edu.wpi.first.smartdashboard.livewindow.elements.DigitalInputDisplay">
+			<location x="6" y="197"/>
+			<height>22</height>
+			<width>309</width>
+		</widget>
+		<widget field="LSBot" type="Digital Input" class="edu.wpi.first.smartdashboard.livewindow.elements.DigitalInputDisplay">
+			<location x="6" y="219"/>
+			<height>22</height>
+			<width>309</width>
+		</widget>
+		<location x="819" y="227"/>
+		<width>321</width>
+		<height>248</height>
+	</widget>
+	<widget field="Sensors" type="LW Subsystem" class="edu.wpi.first.smartdashboard.livewindow.elements.LWSubsystem">
+		<widget field="DigitalAccel" type="Digital Input" class="edu.wpi.first.smartdashboard.livewindow.elements.DigitalInputDisplay">
+			<location x="6" y="18"/>
+			<height>22</height>
+			<width>250</width>
+		</widget>
+		<widget field="AnalogGyro1" type="Gyro" class="edu.wpi.first.smartdashboard.gui.elements.Compass">
+			<location x="6" y="40"/>
+			<height>150</height>
+			<width>250</width>
+		</widget>
+		<widget field="temp" type="Analog Input" class="edu.wpi.first.smartdashboard.livewindow.elements.SingleNumberDisplay">
+			<location x="6" y="190"/>
+			<height>22</height>
+			<width>250</width>
+		</widget>
+		<widget field="maxSonar" type="Analog Input" class="edu.wpi.first.smartdashboard.livewindow.elements.SingleNumberDisplay">
+			<location x="6" y="212"/>
+			<height>22</height>
+			<width>250</width>
+		</widget>
+		<widget field="anAccel" type="Accelerometer" class="edu.wpi.first.smartdashboard.livewindow.elements.SingleNumberDisplay">
+			<location x="6" y="234"/>
+			<height>22</height>
+			<width>250</width>
+		</widget>
+		<location x="216" y="6"/>
+		<width>262</width>
+		<height>263</height>
+	</widget>
+	<widget field="DriveTrain" type="LW Subsystem" class="edu.wpi.first.smartdashboard.livewindow.elements.LWSubsystem">
+		<widget field="MDrive2" type="CANSpeedController" class="edu.wpi.first.smartdashboard.livewindow.elements.CANSpeedController">
+			<location x="6" y="18"/>
+			<height>157</height>
+			<width>309</width>
+		</widget>
+		<widget field="MDrive4" type="CANSpeedController" class="edu.wpi.first.smartdashboard.livewindow.elements.CANSpeedController">
+			<location x="6" y="175"/>
+			<height>157</height>
+			<width>309</width>
+		</widget>
+		<widget field="QuadEncoderLeft" type="Quadrature Encoder" class="edu.wpi.first.smartdashboard.livewindow.elements.EncoderDisplay">
+			<location x="6" y="332"/>
+			<height>106</height>
+			<width>309</width>
+		</widget>
+		<widget field="LeftDriveShifter" type="Double Solenoid" class="edu.wpi.first.smartdashboard.livewindow.elements.RelayController">
+			<location x="6" y="438"/>
+			<height>22</height>
+			<width>309</width>
+		</widget>
+		<widget field="RightDriveShifter" type="Double Solenoid" class="edu.wpi.first.smartdashboard.livewindow.elements.RelayController">
+			<location x="6" y="460"/>
+			<height>22</height>
+			<width>309</width>
+		</widget>
+		<widget field="MDrive1" type="CANSpeedController" class="edu.wpi.first.smartdashboard.livewindow.elements.CANSpeedController">
+			<location x="6" y="482"/>
+			<height>157</height>
+			<width>309</width>
+		</widget>
+		<widget field="MDrive3" type="CANSpeedController" class="edu.wpi.first.smartdashboard.livewindow.elements.CANSpeedController">
+			<location x="6" y="639"/>
+			<height>157</height>
+			<width>309</width>
+		</widget>
+		<widget field="RightLinePseudoLimit" type="Digital Input" class="edu.wpi.first.smartdashboard.livewindow.elements.DigitalInputDisplay">
+			<location x="6" y="796"/>
+			<height>22</height>
+			<width>309</width>
+		</widget>
+		<widget field="QuadEncoderRight" type="Quadrature Encoder" class="edu.wpi.first.smartdashboard.livewindow.elements.EncoderDisplay">
+			<location x="6" y="818"/>
+			<height>106</height>
+			<width>309</width>
+		</widget>
+		<widget field="LeftLinePseudoLimit" type="Digital Input" class="edu.wpi.first.smartdashboard.livewindow.elements.DigitalInputDisplay">
+			<location x="6" y="924"/>
+			<height>22</height>
+			<width>309</width>
+		</widget>
+		<location x="1477" y="3"/>
+		<width>321</width>
+		<height>953</height>
+	</widget>
+	<widget field="Ungrouped" type="LW Subsystem" class="edu.wpi.first.smartdashboard.livewindow.elements.LWSubsystem">
+		<widget field="DigitalInput[11]" type="Digital Input" class="edu.wpi.first.smartdashboard.livewindow.elements.DigitalInputDisplay">
+			<location x="6" y="18"/>
+			<height>22</height>
+			<width>174</width>
+		</widget>
+		<widget field="AnalogInput[0]" type="Analog Input" class="edu.wpi.first.smartdashboard.livewindow.elements.SingleNumberDisplay">
+			<location x="6" y="40"/>
+			<height>22</height>
+			<width>174</width>
+		</widget>
+		<widget field="AnalogInput[4]" type="Analog Input" class="edu.wpi.first.smartdashboard.livewindow.elements.SingleNumberDisplay">
+			<location x="6" y="62"/>
+			<height>22</height>
+			<width>174</width>
+		</widget>
+		<widget field="AnalogInput[1]" type="Analog Input" class="edu.wpi.first.smartdashboard.livewindow.elements.SingleNumberDisplay">
+			<location x="6" y="84"/>
+			<height>22</height>
+			<width>174</width>
+		</widget>
+		<widget field="DigitalInput[10]" type="Digital Input" class="edu.wpi.first.smartdashboard.livewindow.elements.DigitalInputDisplay">
+			<location x="6" y="106"/>
+			<height>22</height>
+			<width>174</width>
+		</widget>
+		<widget field="AnalogInput[3]" type="Analog Input" class="edu.wpi.first.smartdashboard.livewindow.elements.SingleNumberDisplay">
+			<location x="6" y="128"/>
+			<height>22</height>
+			<width>174</width>
+		</widget>
+		<widget field="DigitalInput[12]" type="Digital Input" class="edu.wpi.first.smartdashboard.livewindow.elements.DigitalInputDisplay">
+			<location x="6" y="150"/>
+			<height>22</height>
+			<width>174</width>
+		</widget>
+		<widget field="DigitalInput[13]" type="Digital Input" class="edu.wpi.first.smartdashboard.livewindow.elements.DigitalInputDisplay">
+			<location x="6" y="172"/>
+			<height>22</height>
+			<width>174</width>
+		</widget>
+		<location x="18" y="21"/>
+		<width>186</width>
+		<height>201</height>
+	</widget>
+	<widget field="Lifter" type="LW Subsystem" class="edu.wpi.first.smartdashboard.livewindow.elements.LWSubsystem">
+		<widget field="PotLift" type="Analog Input" class="edu.wpi.first.smartdashboard.livewindow.elements.SingleNumberDisplay">
+			<location x="6" y="18"/>
+			<height>22</height>
+			<width>309</width>
+		</widget>
+		<widget field="MLiftAngle" type="CANSpeedController" class="edu.wpi.first.smartdashboard.livewindow.elements.CANSpeedController">
+			<location x="6" y="40"/>
+			<height>157</height>
+			<width>309</width>
+		</widget>
+		<location x="24" y="279"/>
+		<width>321</width>
+		<height>204</height>
+	</widget>
+	<widget field="SpinShooter" type="LW Subsystem" class="edu.wpi.first.smartdashboard.livewindow.elements.LWSubsystem">
+		<widget field="LeftSpin" type="CANSpeedController" class="edu.wpi.first.smartdashboard.livewindow.elements.CANSpeedController">
+			<location x="6" y="18"/>
+			<height>157</height>
+			<width>309</width>
+		</widget>
+		<widget field="RightSpin" type="CANSpeedController" class="edu.wpi.first.smartdashboard.livewindow.elements.CANSpeedController">
+			<location x="6" y="175"/>
+			<height>157</height>
+			<width>309</width>
+		</widget>
+		<widget field="SpinSolenoid" type="Solenoid" class="edu.wpi.first.smartdashboard.livewindow.elements.DigitalOutputController">
+			<location x="99" y="332"/>
+			<height>25</height>
+			<width>123</width>
+		</widget>
+		<widget field="SpinShooterElevate" type="Double Solenoid" class="edu.wpi.first.smartdashboard.livewindow.elements.RelayController">
+			<location x="6" y="357"/>
+			<height>22</height>
+			<width>309</width>
+		</widget>
+		<location x="481" y="11"/>
+		<width>321</width>
+		<height>386</height>
+	</widget>
+</live-window>
+</xml>

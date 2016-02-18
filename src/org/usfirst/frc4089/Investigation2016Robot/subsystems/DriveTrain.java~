@@ -126,7 +126,6 @@ public class DriveTrain extends Subsystem {
     public double getLeftEncoderRate(){
     	return quadEncoderLeft.getRate();
     }
-    
     public void leftShiftHigh(){
     	leftDriveShifter.set(DoubleSolenoid.Value.kForward);
     }

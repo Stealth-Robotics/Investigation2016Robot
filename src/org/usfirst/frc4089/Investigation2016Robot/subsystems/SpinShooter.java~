@@ -56,20 +56,15 @@ public class SpinShooter extends Subsystem {
     	leftSpin.set(leftSpeed);
     	rightSpin.set(-rightSpeed);
     }
-    
     public void stopShoot(){
     	leftSpin.set(0);
     	rightSpin.set(0);
-    	
     }
-    
     public void spinRaise(){
     	spinSolenoid.set(true);
-    	
     }
     public void spinLower(){
     	spinSolenoid.set(false);
-    	
     }
 }
 
