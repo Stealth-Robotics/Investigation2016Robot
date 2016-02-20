@@ -45,12 +45,11 @@ public class UserDrive extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	/*if (Robot.driveTrain.getDriveState()==false){
+    	if (Robot.driveTrain.getDriveState()==false){
     		Robot.driveTrain.operatorControlFW(Robot.oi.driveJS, Robot.oi.utilJS);
     	} else {
     		Robot.driveTrain.operatorControlBW(Robot.oi.driveJS, Robot.oi.utilJS);
-    
-    	}*/
+    	}
     }
 
     // Make this return true when this Command no longer needs to run execute()

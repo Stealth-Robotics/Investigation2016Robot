@@ -11,6 +11,7 @@
 
 package org.usfirst.frc4089.Investigation2016Robot.subsystems;
 
+import org.usfirst.frc4089.Investigation2016Robot.Constants;
 import org.usfirst.frc4089.Investigation2016Robot.RobotMap;
 import org.usfirst.frc4089.Investigation2016Robot.commands.*;
 import edu.wpi.first.wpilibj.CANTalon;
@@ -49,6 +50,19 @@ public class BarClimb extends Subsystem {
 
         // Set the default command for a subsystem here.
         // setDefaultCommand(new MySpecialCommand());
+    }
+    public boolean getTopSwitch(){
+    	return lSTop.get();
+    }
+    public boolean getBotSwitch(){
+    	return lSBot.get();
+    }
+    
+    public void climbDown(double speed){
+    	winchMotor.set(-speed);
+    }
+    public void climbUp(double speed){
+    	winchMotor.set(speed);
     }
 }
 

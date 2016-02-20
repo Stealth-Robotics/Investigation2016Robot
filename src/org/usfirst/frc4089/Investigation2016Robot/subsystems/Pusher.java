@@ -50,6 +50,11 @@ public class Pusher extends Subsystem {
     public double potValue(){
    	 return potLift.get();
    }
-    
+    public void articulateDown(double speed){
+    	mLiftAngle.set(-speed);
+    }
+    public void articulateUp(double speed){
+    	mLiftAngle.set(speed);
+    }
 }
 

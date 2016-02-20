@@ -49,7 +49,6 @@ public class UserDrive extends Command {
     		Robot.driveTrain.operatorControlFW(Robot.oi.driveJS, Robot.oi.utilJS);
     	} else {
     		Robot.driveTrain.operatorControlBW(Robot.oi.driveJS, Robot.oi.utilJS);
-    
     	}
     }
 

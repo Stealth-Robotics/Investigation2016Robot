@@ -47,11 +47,10 @@ public class RobotMap {
     public static RobotDrive driveTrainRDrive;
     public static Encoder driveTrainQuadEncoderLeft;
     public static Encoder driveTrainQuadEncoderRight;
-    public static CANTalon spinShooterLeftSpin;
-    public static CANTalon spinShooterRightSpin;
-    public static RobotDrive spinShooterShotDrive;
     public static DoubleSolenoid spinShooterSpinShooterElevate;
     public static Solenoid spinShooterSpinSolenoid;
+    public static CANTalon spinShooterLeftSpin;
+    public static CANTalon spinShooterRightSpin;
     public static DigitalInput barClimbLSTop;
     public static DigitalInput barClimbLSBot;
     public static CANTalon barClimbWinchMotor;
@@ -115,24 +114,17 @@ public class RobotMap {
         LiveWindow.addSensor("DriveTrain", "QuadEncoderRight", driveTrainQuadEncoderRight);
         driveTrainQuadEncoderRight.setDistancePerPulse(1.0);
         driveTrainQuadEncoderRight.setPIDSourceType(PIDSourceType.kRate);
-        spinShooterLeftSpin = new CANTalon(5);
-        LiveWindow.addActuator("SpinShooter", "LeftSpin", spinShooterLeftSpin);
-        
-        spinShooterRightSpin = new CANTalon(6);
-        LiveWindow.addActuator("SpinShooter", "RightSpin", spinShooterRightSpin);
-        
-        spinShooterShotDrive = new RobotDrive(spinShooterLeftSpin, spinShooterRightSpin);
-        
-        spinShooterShotDrive.setSafetyEnabled(true);
-        spinShooterShotDrive.setExpiration(0.1);
-        spinShooterShotDrive.setSensitivity(0.5);
-        spinShooterShotDrive.setMaxOutput(1.0);
-
         spinShooterSpinShooterElevate = new DoubleSolenoid(1, 0, 1);
         LiveWindow.addActuator("SpinShooter", "SpinShooterElevate", spinShooterSpinShooterElevate);
         
         spinShooterSpinSolenoid = new Solenoid(1, 6);
         LiveWindow.addActuator("SpinShooter", "SpinSolenoid", spinShooterSpinSolenoid);
+        
+        spinShooterLeftSpin = new CANTalon(5);
+        LiveWindow.addActuator("SpinShooter", "LeftSpin", spinShooterLeftSpin);
+        
+        spinShooterRightSpin = new CANTalon(6);
+        LiveWindow.addActuator("SpinShooter", "RightSpin", spinShooterRightSpin);
         
         barClimbLSTop = new DigitalInput(4);
         LiveWindow.addSensor("BarClimb", "LSTop", barClimbLSTop);
